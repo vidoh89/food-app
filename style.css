@@ -7,6 +7,7 @@
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --deep-saffron: hsl(32, 100%, 59%);
+  --dark-yellow:   hsl(45,100%,49%);
   --dark-orange: hsl(28, 100%, 58%);
   --desert-sand: hsl(23, 49%, 82%);
   --isabelline: hsl(38, 44%, 96%);
@@ -145,7 +146,14 @@ body.active{
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--tangerine);
 }
-
+/* Logo adjustment */
+.logo{
+  position:relative;
+  display: flex;
+  width:5vw;
+  height:10vh;
+  right:18rem;
+}
 /* STYLE  For Headings*/
 
 .container{
@@ -171,7 +179,7 @@ body.active{
 }
 /* Button styling */
 .btn{
-    background-color: var(--bg, var(--deep-saffron));
+    background-color: var(--bg, var(--dark-yellow));
     color: var(--white);
     font-family: var(--ff-rubik);
     font-size: var(--fs-4);
@@ -255,7 +263,7 @@ body.active{
 }
 .section-title > .span{
     display: inline-block;
-    color:var(--deep-saffron);
+    color:var(--dark-yellow);
 }
 /* Adjust about section  */
 .abs-img{
@@ -337,6 +345,9 @@ body.active{
     justify-content: space-between;
     align-items: center;
 }
+.container{
+  justify-content: flex-start;
+}
 .logo{
     color: var(--color);
     font-family: var(--ff-rubik);
@@ -346,7 +357,7 @@ body.active{
 }
 .logo .span{
     display:inline-block;
-    color: var(--deep-saffron);
+    color: var(--dark-yellow);
 }
 .header-btn-group{
     display: flex;
@@ -401,7 +412,7 @@ body.active{
     transition: var(--transition-1);
 }
 .navbar.active{
-    height:236px;
+    height:136px;
     visibility:visible;
 }
 .navbar-list{
@@ -419,7 +430,10 @@ body.active{
     transition: var(--transition-1);
 }
 .navbar-link:is(:hover,:focus){
-    color: var(--dark-orange);
+    color: var(--dark-yellow);
+    font-size: larger;
+    font-weight: 500;
+    transition: all 0.10s ease-in-out;
 }
 
 /* Seach Box */
@@ -529,7 +543,7 @@ body.active{
     content: "";
     position:absolute;
     inset: 0;
-    background-color: var(--deep-saffron);
+    background-color: var(--dark-yellow);
     clip-path: var(--clip-path-1);
     transform:scaleY(0.3);
     transform-origin:bottom;
