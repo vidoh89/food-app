@@ -70,6 +70,9 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+  text-shadow: 0 0 .1rem black;
+}
 li{
     list-style:none;
 }
