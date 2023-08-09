@@ -72,3 +72,17 @@ window.addEventListener("scroll",function(){
         deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
     }
 });
+function showMore(){
+    let longText = document.querySelector('.section-text')
+    if(longText.style.height==='auto'){
+        longText.style.height='100px';
+    }else{
+        longText.style.height='auto';
+    }
+    let longTextBlog = document.querySelector('#read-more');
+    if(longTextBlog.style.height==='auto'){
+        longTextBlog.style.height='100px';
+    } else{
+        longTextBlog.style.height='auto';
+    }
+}
