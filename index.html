@@ -560,7 +560,7 @@
 
                                 <div class="badge">-20%</div>
 
-                                <button class-btn food-menu-btn>Order Now</button>
+                                <button class="btn food-menu-btn">Order Now</button>
                             </div>
 
                             <div class="wrapper">
@@ -987,7 +987,7 @@
             <div class="delivery-content">
 
               <h2 class="h2 section-title">
-                We offer fast and <span class="span">reliable delivery</span>with
+                We offer fast and <span class="span">reliable delivery</span> with
                 every order
               </h2>
 
@@ -1210,11 +1210,11 @@
 
             <li>
               <div class="blog-card">
-
+                <div class="card-banner">
                 <img src="./reference/foodie-master/assets/images/beef-blog.jpg" width="600" height="390" loading="lazy"
-                alt="What do you think about pizza?" class="w-100">
+                alt="Picture of beef burger." class="w-100">
 
-                <div class="badge">Blog</div>
+                <div class="badge">100% beef</div>
 
               <div class="class-content">
 
@@ -1235,8 +1235,8 @@
 
                   <a href="#" class="card-title">What do you think about our  100% beef ?</a>
                 </h3>
-
-                <p class="card-text" id="read-more">
+                <div class="overflow-content">
+                <p class="card-text" id="blogPost1">
                   If you're a fan of burgers, you know that the quality of 
                   the patty has a huge impact on the taste and overall 
                   experience. While there are many different types of 
@@ -1244,15 +1244,12 @@
                   like a 100% beef patty that's never been frozen and 
                   cooked to perfection. In this blog post, we'll explore 
                   the benefits of cooking 100% beef patties on a grill, and why it's worth seeking out high-quality, fresh ingredients for your next burger night.
-
                 </p>
-
-                <a href="#" class="btn-link">
-
-                  <span>Read More</span>
-
+                </div>
+                <button onclick="showMoreInfo()"  class="read-more-btn" >Read More
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
+                  </button>       
+
               </div>
             </li>
             
@@ -1286,19 +1283,18 @@
                     <h3 class="h3">
                       <a href="#" class="card-title">Farm-to-Table Freshness: The Delicious Homegrown Vegetables of Our Restaurant</a>
                     </h3>
-
-                    <p class="card-text" id="read-more">
+                    <div class="overflow-content">
+                    <p class="card-text" id="blogPost2">
                       At our restaurant, we're committed to bringing you
                        the freshest and most flavorful ingredients possible.
                         That's why we source many of our vegetables from 
                         local farms and even grow some ourselves. From crisp lettuce to juicy tomatoes, sweet onions to savory mushrooms, our homegrown produce elevates every dish on our menu. In this blog post, we'll dive into the delicious details of these fresh veggies and how they make our hamburgers and pizzas taste like no other.
-
                     </p>
-                    <a href="#" class="btn-link">
-                      <span>Read More</span>
-
+                    </div>
+                    <button  onclick="showMoreInfo()" class="read-more-btn">Read More
                       <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                    </a>
+                      </button>          
+                  
                   
                 </div>
               </div>
@@ -1308,7 +1304,7 @@
               <div class="blog-card">
                 <div class="card-banner">
                   <img src="./reference/foodie-master/assets/images/pizza-blog.jpg" width="600" height="390" loading="lazy"
-                  alt="Freshly chopped vegetables and never frozen burger.">
+                  alt="Freshly chopped vegetables and never frozen burger. class=w-100" id="blogImg-3">
                   <div class="badge">Hand Tossed pizza</div>
                 </div>
                 <div class="card-content">
@@ -1329,14 +1325,21 @@
                     <a href="#" class="card-title">Hand-Tossed Pizza: The Perfect Combination of Flavor and Texture
                     </a>
                   </h3>
-                  <p class="card-text"id="read-more" >
+                  <div class="overflow-content">
+                  <p class="card-text"id="blogPost3" >
                     At our restaurant, we take great pride in our hand-tossed pizza. 
                     Our perfectly crafted crust provides the ideal base for a variety of 
                     delicious toppings, making every slice a flavor experience you won't 
                     forget! In this blog post, we'll dive into what makes our pizza so
-                     special and the different flavors that we offer.            
+                     special and the different flavors that we offer.  
+                    
                   </p>
-                  <button onclick="showMore()">Read More</button>
+                  </div>
+
+                    <button  onclick="showMoreInfo()" class="read-more-btn">Read More
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>          
+                 
                   <!-- <a href="#" class="btn-link">
                     <button onclick="showMore()">Read More</button>
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>

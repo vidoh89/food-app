@@ -79,10 +79,17 @@ function showMore(){
     }else{
         longText.style.height='auto';
     }
-    let longTextBlog = document.querySelector('#read-more');
-    if(longTextBlog.style.height==='auto'){
-        longTextBlog.style.height='100px';
-    } else{
-        longTextBlog.style.height='auto';
-    }
+  
+}
+let longText = document.querySelector(".overflow-content");
+let readMore = document.querySelector(".read-more-btn");
+function showMoreInfo(){
+    // const blog1=document.querySelector("#blogPost1");
+    // const blog2=document.querySelector("#blogPost2");
+    // const blog3=document.querySelector("#blogPost3");
+   
+    readMore.addEventListener("click",function(){
+        longText.classList.toggle(".showMore")
+    });
+   
 }
