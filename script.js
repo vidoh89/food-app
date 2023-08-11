@@ -81,15 +81,46 @@ function showMore(){
     }
   
 }
-let longText = document.querySelector(".overflow-content");
-let readMore = document.querySelector(".read-more-btn");
-function showMoreInfo(){
-    // const blog1=document.querySelector("#blogPost1");
-    // const blog2=document.querySelector("#blogPost2");
-    // const blog3=document.querySelector("#blogPost3");
-   
-    readMore.addEventListener("click",function(){
-        longText.classList.toggle(".showMore")
-    });
-   
-}
+const parentContainer = document.querySelector('.read-more-container');
+
+parentContainer.addEventListener('click', (e) =>{
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('read-more-btn');
+    if(!isReadMoreBtn)return;
+
+    const currentText=e.target.parentNode.querySelector('.read-more-text');
+    currentText.classList.toggle('read-more-text--show');
+    
+    current.textContent = current.textContent.includes('Read More') ?
+    "Read less" : "Read More";
+});
+const parentContainer2 = document.querySelector('.read-more-container2');
+
+parentContainer2.addEventListener('click', (e) =>{
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('read-more-btn2');
+    if(!isReadMoreBtn)return;
+
+    const currentText=e.target.parentNode.querySelector('.read-more-text2');
+    currentText.classList.toggle('read-more-text--show2');
+    
+    current.textContent = current.textContent.includes('Read More') ?
+    "Read less" : "Read More";
+});
+
+const parentContainer3 = document.querySelector('.read-more-container3');
+
+parentContainer3.addEventListener('click', (e) =>{
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('read-more-btn3');
+    if(!isReadMoreBtn)return;
+
+    const currentText=e.target.parentNode.querySelector('.read-more-text3');
+    currentText.classList.toggle('read-more-text--show3');
+    
+    current.textContent = current.textContent.includes('Read More') ?
+    "Read less" : "Read More";
+});
+
+
+
