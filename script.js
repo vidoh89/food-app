@@ -72,15 +72,6 @@ window.addEventListener("scroll",function(){
         deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
     }
 });
-function showMore(){
-    let longText = document.querySelector('.section-text')
-    if(longText.style.height==='auto'){
-        longText.style.height='100px';
-    }else{
-        longText.style.height='auto';
-    }
-  
-}
 const parentContainer = document.querySelector('.read-more-container');
 
 parentContainer.addEventListener('click', (e) =>{
@@ -90,6 +81,20 @@ parentContainer.addEventListener('click', (e) =>{
 
     const currentText=e.target.parentNode.querySelector('.read-more-text');
     currentText.classList.toggle('read-more-text--show');
+    
+    current.textContent = current.textContent.includes('Read More') ?
+    "Read less" : "Read More";
+});
+
+const parentContainer1 = document.querySelector('.read-more-container1');
+
+parentContainer1.addEventListener('click', (e) =>{
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('read-more-btn1');
+    if(!isReadMoreBtn)return;
+
+    const currentText=e.target.parentNode.querySelector('.read-more-text1');
+    currentText.classList.toggle('read-more-text--show1');
     
     current.textContent = current.textContent.includes('Read More') ?
     "Read less" : "Read More";

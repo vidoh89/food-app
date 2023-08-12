@@ -126,6 +126,13 @@ body{
     line-height:1.6;
     overflow-x:hidden;
 }
+body,p{
+  font-weight:300;
+  text-indent: 1px;
+  text-align: center;
+  line-height: 20px;
+
+}
 body.active{
     overflow: hidden;
 }
@@ -333,7 +340,7 @@ body.active{
     --color: var(var(--rich-black-fogra-29));
     --btn-color:var(var(--rich-black-fogra-29));
 
-    position: fixed;
+    position: relative;
     top:-86px;
     background-color: var(--white);
     box-shadow: var(--shadow-1);
@@ -606,6 +613,10 @@ color: var(--dark-yellow);
     position:relative;
     aspect-ratio: 1/0.9;
 }
+.about-container{
+  padding:2rem;
+  line-height:1.4rem;
+}
 
 /* Test readmore sectio
 
@@ -614,10 +625,6 @@ color: var(--dark-yellow);
   display:inline-flex;
   flex-direction: column;
   
-}
-.about-container{
-  padding:2rem;
-  line-height:1.4rem;
 }
 .read-more-text{
   display:none;
@@ -630,6 +637,24 @@ color: var(--dark-yellow);
   
 }
 .read-more-text--show{
+  display:inline;
+}
+.read-more-container1{
+  display:inline-flex;
+  flex-direction: column;
+  
+}
+.read-more-text1{
+  display:none;
+}
+.read-more-btn1{
+  color:var(--dark-yellow);
+  cursor: pointer;
+  padding-top: 1rem;
+  flex-grow: 1;
+  
+}
+.read-more-text--show1{
   display:inline;
 }
 .read-more-container2{
